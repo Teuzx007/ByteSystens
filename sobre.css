@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout geral */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 20px; /* Aumenta o tamanho geral da fonte */
+  background-color: #f9f9f9; /* Fundo cinza claro */
+  color: #333; /* Texto em tom escuro */
+  margin: 0;
+  padding: 0;
+  line-height: 1.8; /* Melhora o espaçamento entre linhas */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #001f33;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+p{
+  font-size: 160%;
+}
+header .logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #004d80;
+  border-radius: 5px;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #001f33;
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+footer .whatsapp-link {
+  color: #25D366;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  main h1 {
+      font-size: 1.5rem;
+  }
+
+  main p {
+      font-size: 0.9rem;
+  }
+}   
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff; /* Fundo branco suave para o conteúdo */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Leve sombra para destaque */
+  border-radius: 10px; /* Cantos arredondados */
+}
+h2 {
+  font-size: 28px; /* Aumenta o tamanho dos títulos */
+  color: #444; /* Um tom de cinza mais escuro */
+}
+p {
+  margin-bottom: 20px; /* Espaçamento entre os parágrafos */
+}
+.highlight {
+  font-size: 22px; /* Aumenta o tamanho dos destaques */
+  margin-bottom: 25px; /* Dá mais espaço entre os tópicos */
+}
+b {
+  color: #222; /* Destaque leve no texto em negrito */
+}
